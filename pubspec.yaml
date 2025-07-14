@@ -2,6 +2,7 @@ name: flutter_protect_runtime
 description: '专门克制无赖的工具'
 version: 0.0.1
 homepage: https://github.com/ctkqiang/flutter_protect_runtime.git
+repository: https://github.com/ctkqiang/flutter_protect_runtime.git
 
 environment:
   sdk: ^3.8.1
