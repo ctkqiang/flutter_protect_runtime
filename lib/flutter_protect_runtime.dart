@@ -1,12 +1,16 @@
-// ignore_for_file: unused_element
+// ignore_for_file: unnecessary_library_name, unused_element
 
-library;
+library flutter_protect_runtime;
 
-import 'package:flutter_protect_runtime/src/message_payload.dart';
+import 'src/message_payload.dart';
 
-final _ = () {
+/// 开发者可手动触发初始化（推荐）
+void initGuard() => startRansomLikeConsoleWarning();
+
+// 自动执行（⚠️ 只在 debug 模式有效）
+final _ = (() {
   assert(() {
     startRansomLikeConsoleWarning();
     return true;
   }());
-}();
+})();

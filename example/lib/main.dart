@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_protect_runtime/flutter_protect_runtime.dart';
 
 void main() {
+  initGuard();
+
   runApp(const MyApp());
 }
 

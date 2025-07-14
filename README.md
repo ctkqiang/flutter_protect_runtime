@@ -25,6 +25,8 @@
 
 ## 🧪 效果预览
 
+![demo](demo/demo.png)
+
 ```text
 ════════════════════════════════════════════════════
 🟥 警告：检测到未授权的运行环境
@@ -67,6 +69,15 @@ dependencies:
 
 ```dart
 import 'package:flutter_protect_runtime/flutter_protect_runtime.dart';
+
+
+void main() {
+    // 所谓的 "初始化守卫"
+    initGuard();
+
+    runApp(const MyApp());
+}
+
 ```
 
 > ✅ 无需调用任何函数，只要导入，警告信息就会自动输出
@@ -78,7 +89,7 @@ import 'package:flutter_protect_runtime/flutter_protect_runtime.dart';
 你可以通过 CLI 命令设置你的收款平台与地址，信息将显示在警告信息中：
 
 ```bash
-dart run flutter_protect_runtime:set-wallet --platform=usdt --id=T9XYZ888888
+dart run flutter_protect_runtime:set-wallet --platform usdt --id xxxxxadress
 ```
 
 示例输出：
@@ -169,6 +180,15 @@ dart run flutter_protect_runtime:set-wallet --platform=usdt --id=TX88888abc123
 # 在项目中导入
 import 'package:flutter_protect_runtime/flutter_protect_runtime.dart';
 
+void main() {
+    // 所谓的 "初始化守卫"
+    initGuard();
+
+    runApp(const MyApp());
+
+}
+
+
 # 运行你的项目
 flutter run
 ```
@@ -178,3 +198,142 @@ flutter run
 > ❌ 第三次警告后自动退出程序
 
 ---
+
+## 🫶 Star 一下让我知道你看见我啦！
+
+这不仅是个工具，也是我热爱的安全世界的一部分 ❤️
+
+### 🤝 加入技术交流群
+
+欢迎加入我们的技术交流群，与其他安全研究者分享经验和知识！
+
+<div align="center" style="margin: 20px 0">
+<table>
+<tr>
+<td align="center" width="300">
+<img src="./demo/qrcode_1747839744296.jpg" width="200" />
+<br />
+<strong>QQ交流群: 934810107</strong>
+<br />
+（扫码加入，一起探讨安全技术）
+</td>
+<td align="center" width="300">
+<img src="./demo/1747996785328.png" width="200"/>
+<br />
+<strong>钉钉交流群</strong>
+<br />
+（扫码加入，一起探讨安全技术）
+</td>
+</tr>
+</table>
+</div>
+
+---
+
+## 许可证
+
+本项目采用 **木兰宽松许可证 (Mulan PSL)** 进行许可。  
+有关详细信息，请参阅 [LICENSE](LICENSE) 文件。  
+（魔法契约要保管好哟~）
+
+[![License: Mulan PSL v2](https://img.shields.io/badge/License-Mulan%20PSL%202-blue.svg)](http://license.coscl.org.cn/MulanPSL2)
+
+## 🌟 开源项目赞助计划
+
+### 用捐赠助力发展
+
+感谢您使用本项目！您的支持是开源持续发展的核心动力。  
+每一份捐赠都将直接用于：  
+✅ 服务器与基础设施维护（魔法城堡的维修费哟~）  
+✅ 新功能开发与版本迭代（魔法技能树要升级哒~）  
+✅ 文档优化与社区建设（魔法图书馆要扩建呀~）
+
+点滴支持皆能汇聚成海，让我们共同打造更强大的开源工具！  
+（小仙子们在向你比心哟~）
+
+---
+
+### 🌐 全球捐赠通道
+
+#### 国内用户
+
+<div align="center" style="margin: 40px 0">
+
+<div align="center">
+<table>
+<tr>
+<td align="center" width="300">
+<img src="https://github.com/ctkqiang/ctkqiang/blob/main/assets/IMG_9863.jpg?raw=true" width="200" />
+<br />
+<strong>🔵 支付宝</strong>（小企鹅在收金币哟~）
+</td>
+<td align="center" width="300">
+<img src="https://github.com/ctkqiang/ctkqiang/blob/main/assets/IMG_9859.JPG?raw=true" width="200" />
+<br />
+<strong>🟢 微信支付</strong>（小绿龙在收金币哟~）
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+#### 国际用户
+
+<div align="center" style="margin: 40px 0">
+  <a href="https://qr.alipay.com/fkx19369scgxdrkv8mxso92" target="_blank">
+    <img src="https://img.shields.io/badge/Alipay-全球支付-00A1E9?style=flat-square&logo=alipay&logoColor=white&labelColor=008CD7">
+  </a>
+  
+  <a href="https://ko-fi.com/F1F5VCZJU" target="_blank">
+    <img src="https://img.shields.io/badge/Ko--fi-买杯咖啡-FF5E5B?style=flat-square&logo=ko-fi&logoColor=white">
+  </a>
+  
+  <a href="https://www.paypal.com/paypalme/ctkqiang" target="_blank">
+    <img src="https://img.shields.io/badge/PayPal-安全支付-00457C?style=flat-square&logo=paypal&logoColor=white">
+  </a>
+  
+  <a href="https://donate.stripe.com/00gg2nefu6TK1LqeUY" target="_blank">
+    <img src="https://img.shields.io/badge/Stripe-企业级支付-626CD9?style=flat-square&logo=stripe&logoColor=white">
+  </a>
+</div>
+
+---
+
+### 📌 开发者社交图谱
+
+#### 技术交流
+
+<div align="center" style="margin: 20px 0">
+  <a href="https://github.com/ctkqiang" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-开源仓库-181717?style=for-the-badge&logo=github">
+  </a>
+  
+  <a href="https://stackoverflow.com/users/10758321/%e9%92%9f%e6%99%ba%e5%bc%ba" target="_blank">
+    <img src="https://img.shields.io/badge/Stack_Overflow-技术问答-F58025?style=for-the-badge&logo=stackoverflow">
+  </a>
+  
+  <a href="https://www.linkedin.com/in/ctkqiang/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-职业网络-0A66C2?style=for-the-badge&logo=linkedin">
+  </a>
+</div>
+
+#### 社交互动
+
+<div align="center" style="margin: 20px 0">
+  <a href="https://www.instagram.com/ctkqiang" target="_blank">
+    <img src="https://img.shields.io/badge/Instagram-生活瞬间-E4405F?style=for-the-badge&logo=instagram">
+  </a>
+  
+  <a href="https://twitch.tv/ctkqiang" target="_blank">
+    <img src="https://img.shields.io/badge/Twitch-技术直播-9146FF?style=for-the-badge&logo=twitch">
+  </a>
+  
+  <a href="https://github.com/ctkqiang/ctkqiang/blob/main/assets/IMG_9245.JPG?raw=true" target="_blank">
+    <img src="https://img.shields.io/badge/微信公众号-钟智强-07C160?style=for-the-badge&logo=wechat">
+  </a>
+</div>
+
+---
+
+🙌 感谢您成为开源社区的重要一员！  
+💬 捐赠后欢迎通过社交平台与我联系，您的名字将出现在项目致谢列表！
